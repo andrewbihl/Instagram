@@ -6,7 +6,7 @@
 //  Copyright © 2016 Andrew Bihl. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 class CameraViewController: UIViewController {
 
