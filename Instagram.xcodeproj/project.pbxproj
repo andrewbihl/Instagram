@@ -13,6 +13,11 @@
 		2F516B0D1D134B4C0078F8AA /* Instagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B0B1D134B4C0078F8AA /* Instagram.xcdatamodeld */; };
 		2F516B0F1D134B4C0078F8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F516B0E1D134B4C0078F8AA /* Assets.xcassets */; };
 		2F516B121D134B4C0078F8AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F516B101D134B4C0078F8AA /* LaunchScreen.storyboard */; };
+		2F516B1A1D134D560078F8AA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B191D134D560078F8AA /* CameraViewController.swift */; };
+		2F516B1C1D134D940078F8AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B1B1D134D940078F8AA /* HomeViewController.swift */; };
+		2F516B1E1D134E0D0078F8AA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B1D1D134E0D0078F8AA /* SearchViewController.swift */; };
+		2F516B201D134E560078F8AA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B1F1D134E560078F8AA /* FeedViewController.swift */; };
+		2F516B221D134E810078F8AA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B211D134E810078F8AA /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		2F516B0E1D134B4C0078F8AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F516B111D134B4C0078F8AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F516B131D134B4C0078F8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F516B191D134D560078F8AA /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		2F516B1B1D134D940078F8AA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2F516B1D1D134E0D0078F8AA /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2F516B1F1D134E560078F8AA /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		2F516B211D134E810078F8AA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,11 @@
 				2F516B041D134B4C0078F8AA /* AppDelegate.swift */,
 				2F516B061D134B4C0078F8AA /* ViewController.swift */,
 				2F516B081D134B4C0078F8AA /* Main.storyboard */,
+				2F516B211D134E810078F8AA /* ProfileViewController.swift */,
+				2F516B1F1D134E560078F8AA /* FeedViewController.swift */,
+				2F516B1D1D134E0D0078F8AA /* SearchViewController.swift */,
+				2F516B1B1D134D940078F8AA /* HomeViewController.swift */,
+				2F516B191D134D560078F8AA /* CameraViewController.swift */,
 				2F516B0E1D134B4C0078F8AA /* Assets.xcassets */,
 				2F516B101D134B4C0078F8AA /* LaunchScreen.storyboard */,
 				2F516B131D134B4C0078F8AA /* Info.plist */,
@@ -139,9 +154,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F516B1E1D134E0D0078F8AA /* SearchViewController.swift in Sources */,
+				2F516B1C1D134D940078F8AA /* HomeViewController.swift in Sources */,
 				2F516B071D134B4C0078F8AA /* ViewController.swift in Sources */,
+				2F516B1A1D134D560078F8AA /* CameraViewController.swift in Sources */,
 				2F516B0D1D134B4C0078F8AA /* Instagram.xcdatamodeld in Sources */,
 				2F516B051D134B4C0078F8AA /* AppDelegate.swift in Sources */,
+				2F516B221D134E810078F8AA /* ProfileViewController.swift in Sources */,
+				2F516B201D134E560078F8AA /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
