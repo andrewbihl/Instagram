@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2F516B051D134B4C0078F8AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B041D134B4C0078F8AA /* AppDelegate.swift */; };
 		2F516B071D134B4C0078F8AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B061D134B4C0078F8AA /* ViewController.swift */; };
-		2F516B0A1D134B4C0078F8AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F516B081D134B4C0078F8AA /* Main.storyboard */; };
 		2F516B0D1D134B4C0078F8AA /* Instagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B0B1D134B4C0078F8AA /* Instagram.xcdatamodeld */; };
 		2F516B0F1D134B4C0078F8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F516B0E1D134B4C0078F8AA /* Assets.xcassets */; };
 		2F516B121D134B4C0078F8AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F516B101D134B4C0078F8AA /* LaunchScreen.storyboard */; };
@@ -18,13 +17,14 @@
 		2F516B1E1D134E0D0078F8AA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B1D1D134E0D0078F8AA /* SearchViewController.swift */; };
 		2F516B201D134E560078F8AA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B1F1D134E560078F8AA /* FeedViewController.swift */; };
 		2F516B221D134E810078F8AA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B211D134E810078F8AA /* ProfileViewController.swift */; };
+		A8A13DE31D15B6FE007A97A5 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A13DE21D15B6FE007A97A5 /* GridViewController.swift */; };
+		A8A999A81D15C651004250FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A999A61D15C651004250FB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F516B011D134B4C0078F8AA /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F516B041D134B4C0078F8AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F516B061D134B4C0078F8AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2F516B091D134B4C0078F8AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F516B0C1D134B4C0078F8AA /* Instagram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instagram.xcdatamodel; sourceTree = "<group>"; };
 		2F516B0E1D134B4C0078F8AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F516B111D134B4C0078F8AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +34,8 @@
 		2F516B1D1D134E0D0078F8AA /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2F516B1F1D134E560078F8AA /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		2F516B211D134E810078F8AA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A8A13DE21D15B6FE007A97A5 /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		A8A999A71D15C651004250FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,8 @@
 			children = (
 				2F516B041D134B4C0078F8AA /* AppDelegate.swift */,
 				2F516B061D134B4C0078F8AA /* ViewController.swift */,
-				2F516B081D134B4C0078F8AA /* Main.storyboard */,
+				A8A13DE21D15B6FE007A97A5 /* GridViewController.swift */,
+				A8A999A61D15C651004250FB /* Main.storyboard */,
 				2F516B211D134E810078F8AA /* ProfileViewController.swift */,
 				2F516B1F1D134E560078F8AA /* FeedViewController.swift */,
 				2F516B1D1D134E0D0078F8AA /* SearchViewController.swift */,
@@ -141,9 +144,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A999A81D15C651004250FB /* Main.storyboard in Resources */,
 				2F516B121D134B4C0078F8AA /* LaunchScreen.storyboard in Resources */,
 				2F516B0F1D134B4C0078F8AA /* Assets.xcassets in Resources */,
-				2F516B0A1D134B4C0078F8AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,26 +165,27 @@
 				2F516B051D134B4C0078F8AA /* AppDelegate.swift in Sources */,
 				2F516B221D134E810078F8AA /* ProfileViewController.swift in Sources */,
 				2F516B201D134E560078F8AA /* FeedViewController.swift in Sources */,
+				A8A13DE31D15B6FE007A97A5 /* GridViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2F516B081D134B4C0078F8AA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2F516B091D134B4C0078F8AA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2F516B101D134B4C0078F8AA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2F516B111D134B4C0078F8AA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A8A999A61D15C651004250FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8A999A71D15C651004250FB /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -313,6 +317,7 @@
 				2F516B181D134B4C0078F8AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
