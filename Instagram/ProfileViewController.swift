@@ -34,6 +34,7 @@ class ProfileViewController: UIViewController {
             viewItem.removeFromSuperview()
         }
         if let vc = vc {
+            vc.view.frame = CGRectMake(0, 0, containerView.frame.width, containerView.frame.height)
             containerView.addSubview(vc.view)
         }
     }
