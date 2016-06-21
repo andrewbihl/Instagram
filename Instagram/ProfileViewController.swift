@@ -19,7 +19,7 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         //        reference to storyboard
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
         listVC = storyboard.instantiateViewControllerWithIdentifier("imageListVC")
         mapVC = storyboard.instantiateViewControllerWithIdentifier("mapVC")
         lastVC = storyboard.instantiateViewControllerWithIdentifier("lastVC")
