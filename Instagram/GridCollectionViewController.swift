@@ -8,10 +8,16 @@
 
 import UIKit
 
+protocol GridCollectionViewControllerDelegate {
+    //func controller (controller: GridCollectionViewController, didSelectItem: AnyObject)
+    func didTapPicture(image: UIImage, comment: String)
+}
+
 let reuseIdentifier = "collectionCellID"
 
-class GridCollectionViewController: UICollectionViewController {
+class GridCollectionViewController: UICollectionViewController{
     
+    var delegate:GridCollectionViewControllerDelegate?
     
     var samplePhotos = [String]()
     
@@ -23,17 +29,17 @@ class GridCollectionViewController: UICollectionViewController {
     }
     
     
-
-    
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return samplePhotos.count
     }
     
+  
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! MyCollectionViewCell
         
         let image = UIImage(named: samplePhotos[indexPath.row])
+        //let image = UIImage(named: usersPosts[indexPath.row]["image"])
         cell.imageView.image = image
         
         return cell
@@ -45,6 +51,18 @@ class GridCollectionViewController: UICollectionViewController {
         return CGSizeMake(collectionView.frame.width/3, collectionView.frame.height/3)
         
     }
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        //performSegueWithIdentifier("toDetailTableView", sender: self)
+        if let image = UIImage(named: samplePhotos[indexPath.row]) {
+            self.delegate?.didTapPicture(image, comment: "test comment")
+            
+        }
+        
+    }
+    
+  
+    
     
     
     

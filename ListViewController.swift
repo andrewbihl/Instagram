@@ -8,20 +8,44 @@
 
 import UIKit
 
-class ListViewController: ViewController {
+class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
+    @IBOutlet var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        tableView.reloadData()
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
+     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    
+     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("listViewID", forIndexPath: indexPath) as! MediaItemTableViewCell
+        
+        let item = MediaItem(comments:["blah blah blah"], byline: "moreText", timePosted: "andThen", like: "liked")
+//
+        cell.someObject = item
+        
+//        cell.imageView?.image = item.photo
+        
+//        cell.commentLabel?.text = item.comments
+//        cell.commentLabel?.numberOfLines = 0
+        
+        cell.subheading?.text = item.byline
+        cell.subheading?.numberOfLines = 0
+        
+        
+        
+        return cell
+    }
     /*
     // MARK: - Navigation
 

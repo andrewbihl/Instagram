@@ -26,7 +26,9 @@
 		2FDA984F1D1883480014CFF8 /* CameraViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA984E1D1883480014CFF8 /* CameraViewButton.swift */; };
 		A86F3B291D173CFF00C7C2B8 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F3B281D173CFF00C7C2B8 /* MyCollectionViewCell.swift */; };
 		A86F3B561D1852A200C7C2B8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86F3B541D1852A200C7C2B8 /* Profile.storyboard */; };
-		A8A13DE31D15B6FE007A97A5 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A13DE21D15B6FE007A97A5 /* GridViewController.swift */; };
+		A86F3B581D188C2B00C7C2B8 /* MediaItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F3B571D188C2B00C7C2B8 /* MediaItemTableViewCell.swift */; };
+		A86F3B5A1D1890E300C7C2B8 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F3B591D1890E300C7C2B8 /* MediaItem.swift */; };
+		A86F3B5C1D19EA4500C7C2B8 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F3B5B1D19EA4500C7C2B8 /* DetailTableViewController.swift */; };
 		A8A999AB1D160C4B004250FB /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A999AA1D160C4B004250FB /* ListViewController.swift */; };
 		A8A999AD1D160DFF004250FB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A999AC1D160DFF004250FB /* MapViewController.swift */; };
 		A8A999AF1D160E15004250FB /* LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A999AE1D160E15004250FB /* LastViewController.swift */; };
@@ -59,7 +61,9 @@
 		7C6401245C2EC354216FF573 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		A86F3B281D173CFF00C7C2B8 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		A86F3B551D1852A200C7C2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
-		A8A13DE21D15B6FE007A97A5 /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		A86F3B571D188C2B00C7C2B8 /* MediaItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItemTableViewCell.swift; sourceTree = "<group>"; };
+		A86F3B591D1890E300C7C2B8 /* MediaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		A86F3B5B1D19EA4500C7C2B8 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		A8A999AA1D160C4B004250FB /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = ../ListViewController.swift; sourceTree = "<group>"; };
 		A8A999AC1D160DFF004250FB /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A8A999AE1D160E15004250FB /* LastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LastViewController.swift; path = ../LastViewController.swift; sourceTree = "<group>"; };
@@ -143,11 +147,13 @@
 			isa = PBXGroup;
 			children = (
 				2F516B211D134E810078F8AA /* ProfileViewController.swift */,
-				A8A999AC1D160DFF004250FB /* MapViewController.swift */,
-				A8A999AA1D160C4B004250FB /* ListViewController.swift */,
 				A8A999B01D172ADC004250FB /* GridCollectionViewController.swift */,
+				A86F3B5B1D19EA4500C7C2B8 /* DetailTableViewController.swift */,
 				A86F3B281D173CFF00C7C2B8 /* MyCollectionViewCell.swift */,
-				A8A13DE21D15B6FE007A97A5 /* GridViewController.swift */,
+				A8A999AA1D160C4B004250FB /* ListViewController.swift */,
+				A86F3B591D1890E300C7C2B8 /* MediaItem.swift */,
+				A86F3B571D188C2B00C7C2B8 /* MediaItemTableViewCell.swift */,
+				A8A999AC1D160DFF004250FB /* MapViewController.swift */,
 				A8A999AE1D160E15004250FB /* LastViewController.swift */,
 			);
 			name = ProfileView;
@@ -282,12 +288,15 @@
 				A8A999AD1D160DFF004250FB /* MapViewController.swift in Sources */,
 				2F1823AC1D19B36300281F28 /* StartViewController.swift in Sources */,
 				2F516B1E1D134E0D0078F8AA /* SearchViewController.swift in Sources */,
+				A86F3B5A1D1890E300C7C2B8 /* MediaItem.swift in Sources */,
 				A8A999B11D172ADC004250FB /* GridCollectionViewController.swift in Sources */,
+				A86F3B5C1D19EA4500C7C2B8 /* DetailTableViewController.swift in Sources */,
 				2F516B1C1D134D940078F8AA /* HomeViewController.swift in Sources */,
 				2F516B071D134B4C0078F8AA /* ViewController.swift in Sources */,
 				2F2A73C61D1B225B00939535 /* TabViewController.swift in Sources */,
 				2F516B1A1D134D560078F8AA /* CameraViewController.swift in Sources */,
 				2F516B0D1D134B4C0078F8AA /* Instagram.xcdatamodeld in Sources */,
+				A86F3B581D188C2B00C7C2B8 /* MediaItemTableViewCell.swift in Sources */,
 				2F516B051D134B4C0078F8AA /* AppDelegate.swift in Sources */,
 				A86F3B291D173CFF00C7C2B8 /* MyCollectionViewCell.swift in Sources */,
 				2F516B221D134E810078F8AA /* ProfileViewController.swift in Sources */,

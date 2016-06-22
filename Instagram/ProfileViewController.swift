@@ -8,25 +8,51 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, GridCollectionViewControllerDelegate {
     
     @IBOutlet weak var containerView: UIView!
     
     var listVC: UIViewController?
     var mapVC: UIViewController?
     var lastVC: UIViewController?
-    var gridVC: UIViewController?
+    var gridVC: GridCollectionViewController?
+    
+    var commentForDetailView: String?
+    var imageForDetailView: UIImage?
     
     override func viewDidLoad() {
         //        reference to storyboard
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
         listVC = storyboard.instantiateViewControllerWithIdentifier("imageListVC")
         mapVC = storyboard.instantiateViewControllerWithIdentifier("mapVC")
         lastVC = storyboard.instantiateViewControllerWithIdentifier("lastVC")
-        gridVC = storyboard.instantiateViewControllerWithIdentifier("gridVC")
+        gridVC = storyboard.instantiateViewControllerWithIdentifier("gridVC") as! GridCollectionViewController
+        gridVC!.delegate = self
         showGrid()
     }
-
+    
+    
+    //    func controller(controller: GridCollectionViewController, didSelectItem: AnyObject) {
+    //        print("A picture was tapped")
+    //    }
+    
+    func didTapPicture(image: UIImage, comment: String) {
+        
+        commentForDetailView = comment
+        imageForDetailView = image
+        performSegueWithIdentifier("toDetailTableView", sender: nil)
+       
+        print("Picture was tapped at \(image)")
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toDetailTableView" {
+            let svc = segue.destinationViewController as! DetailTableViewController
+            svc.this = commentForDetailView
+            svc.that = imageForDetailView
+        }
+    }
     
     func swapContainerChildView (vc: UIViewController?) {
         //  listVC is an optional, so we cannot grab its view if it's nil (i.e. doesn't exist) -- .addSubview requires a non-optional to be passed in
