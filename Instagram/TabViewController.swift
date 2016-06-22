@@ -12,9 +12,16 @@ class TabViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.viewControllers = [self]
+//        self.navigationController?.viewControllers = [self]
+//        self.parentViewController?.navigationController
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.view.window?.rootViewController = self
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

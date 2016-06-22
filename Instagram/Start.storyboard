@@ -63,7 +63,7 @@
                     <connections>
                         <outlet property="passwordField" destination="64w-7b-6jq" id="a5A-re-OeY"/>
                         <outlet property="usernameField" destination="h5f-iP-yxV" id="l1L-1e-oNj"/>
-                        <segue destination="aqc-B8-IPb" kind="show" identifier="logInSegue" action="showDetailViewController:sender:" id="Vg0-es-Ib5"/>
+                        <segue destination="aqc-B8-IPb" kind="presentation" identifier="logInSegue" id="Vg0-es-Ib5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOU-Vg-Fxx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -146,7 +146,7 @@
                         <outlet property="firstNameField" destination="wNE-4G-meF" id="LKZ-Xr-uiI"/>
                         <outlet property="passwordField" destination="MLx-Ux-Bra" id="Bcy-Vq-u8w"/>
                         <outlet property="usernameField" destination="Zrw-mq-3lo" id="2UJ-Kh-ved"/>
-                        <segue destination="aqc-B8-IPb" kind="showDetail" identifier="logInSegue" action="showViewController:sender:" id="9pP-AN-l5D"/>
+                        <segue destination="aqc-B8-IPb" kind="presentation" identifier="logInSegue" id="9pP-AN-l5D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0da-oF-lx2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -174,20 +174,20 @@
             </objects>
             <point key="canvasLocation" x="1792" y="295"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Camera-->
         <scene sceneID="Vn2-2d-7NM">
             <objects>
-                <viewControllerPlaceholder id="Sgd-9C-Dvc" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Camera" id="Sgd-9C-Dvc" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="RBo-Pf-ClX"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hjb-iz-fD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1533.5" y="709"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Camera-->
         <scene sceneID="LaC-rn-1EL">
             <objects>
-                <viewControllerPlaceholder id="Igj-KC-IzS" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Camera" id="Igj-KC-IzS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="3CT-K0-Zwl"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOX-Ta-tgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -244,6 +244,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Vg0-es-Ib5"/>
+        <segue reference="9pP-AN-l5D"/>
     </inferredMetricsTieBreakers>
 </document>
