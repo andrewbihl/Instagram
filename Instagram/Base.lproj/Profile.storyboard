@@ -27,7 +27,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3AP-bs-JX7"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="grid"/>
                                 <connections>
                                     <action selector="showGrid" destination="Ufq-Nd-IIf" eventType="touchUpInside" id="0Xm-my-9g7"/>
                                 </connections>
@@ -37,7 +37,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="eEp-4L-PiX"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="map-geotag"/>
                                 <connections>
                                     <action selector="showMap:" destination="Ufq-Nd-IIf" eventType="touchUpInside" id="Ykf-rA-IRK"/>
                                 </connections>
@@ -47,17 +47,17 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="7Xe-Xt-YOE"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="friends_tag"/>
                                 <connections>
                                     <action selector="showLast:" destination="Ufq-Nd-IIf" eventType="touchUpInside" id="rCF-v4-152"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpJ-ZM-J2n">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpJ-ZM-J2n">
                                 <rect key="frame" x="160" y="137" width="140" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="2YG-TJ-tJF"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="listview"/>
                                 <connections>
                                     <action selector="showList:" destination="Ufq-Nd-IIf" eventType="touchUpInside" id="3Xo-4Y-7tM"/>
                                 </connections>
@@ -454,4 +454,10 @@
             <point key="canvasLocation" x="250" y="1223"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="friends_tag" width="234" height="117"/>
+        <image name="grid" width="234" height="117"/>
+        <image name="listview" width="234" height="117"/>
+        <image name="map-geotag" width="234" height="117"/>
+    </resources>
 </document>

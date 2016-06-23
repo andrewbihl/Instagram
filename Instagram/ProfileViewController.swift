@@ -29,6 +29,7 @@ class ProfileViewController: UIViewController, GridCollectionViewControllerDeleg
         gridVC = storyboard.instantiateViewControllerWithIdentifier("gridVC") as! GridCollectionViewController
         gridVC!.delegate = self
         showGrid()
+        self.navigationController?.navigationBarHidden = true
     }
     
     
