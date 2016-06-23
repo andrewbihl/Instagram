@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MapKit
 
-class MapViewController: ViewController {
+class MapViewController: ViewController, MKMapViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()

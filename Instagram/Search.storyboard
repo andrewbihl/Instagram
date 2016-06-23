@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7JQ-Q9-eGu">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="gQH-m8-ChP">
+            <objects>
+                <viewController title="Search" id="7JQ-Q9-eGu" customClass="SearchViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iXG-bj-Gbq"/>
+                        <viewControllerLayoutGuide type="bottom" id="kEu-6x-6wi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1hM-HS-wQl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="mTl-OZ-yIO">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="Dm0-oE-en9"/>
+                                    <constraint firstAttribute="height" constant="44" id="tTB-mZ-jIt"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mTl-OZ-yIO" firstAttribute="top" secondItem="iXG-bj-Gbq" secondAttribute="bottom" constant="8" id="L7s-wJ-HCU"/>
+                            <constraint firstItem="mTl-OZ-yIO" firstAttribute="leading" secondItem="1hM-HS-wQl" secondAttribute="leading" id="Uof-mw-SAA"/>
+                            <constraint firstAttribute="trailing" secondItem="mTl-OZ-yIO" secondAttribute="trailing" id="t0v-V6-DgN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGR-uY-6XJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250" y="164"/>
+        </scene>
+    </scenes>
+</document>

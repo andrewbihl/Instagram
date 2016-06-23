@@ -182,12 +182,12 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hjb-iz-fD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1533.5" y="709"/>
+            <point key="canvasLocation" x="1513" y="755"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Search-->
         <scene sceneID="LaC-rn-1EL">
             <objects>
-                <viewControllerPlaceholder id="Igj-KC-IzS" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Search" id="Igj-KC-IzS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="search" id="3CT-K0-Zwl"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOX-Ta-tgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -202,27 +202,27 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6jS-Yg-OWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839.5" y="827"/>
+            <point key="canvasLocation" x="1792.5" y="842"/>
         </scene>
-        <!--HomeView-->
+        <!--Feed-->
         <scene sceneID="NFS-Ll-9Ak">
             <objects>
-                <viewControllerPlaceholder storyboardName="HomeView" id="cyL-4v-KTq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="5A4-rG-QL7"/>
+                <viewControllerPlaceholder storyboardName="Feed" id="cyL-4v-KTq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feed" id="5A4-rG-QL7"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEG-R3-VlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2003.5" y="721"/>
+            <point key="canvasLocation" x="1944" y="822"/>
         </scene>
         <!--Profile-->
         <scene sceneID="I60-mB-6Kg">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" id="vyJ-4O-UKy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="iKU-rp-fav"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Cloudshot-64" id="iKU-rp-fav" userLabel="Profile"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nB1-kp-wKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2119" y="665"/>
+            <point key="canvasLocation" x="2056" y="755"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8qu-uI-4nm">
@@ -244,6 +244,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Cloudshot-64" width="21" height="21"/>
         <image name="camera3" width="75" height="75"/>
         <image name="feed" width="25" height="25"/>
         <image name="search" width="25" height="25"/>

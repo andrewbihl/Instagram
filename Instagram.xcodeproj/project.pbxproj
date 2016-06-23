@@ -30,6 +30,9 @@
 		A86F3B5A1D1890E300C7C2B8 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F3B591D1890E300C7C2B8 /* MediaItem.swift */; };
 		A86F3B5C1D19EA4500C7C2B8 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F3B5B1D19EA4500C7C2B8 /* DetailTableViewController.swift */; };
 		A88A29221D1C660600874AE7 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88A29211D1C660600874AE7 /* HomeView.storyboard */; };
+		A88A29241D1C81D700874AE7 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88A29231D1C81D700874AE7 /* Search.storyboard */; };
+		A88A29281D1C8B2400874AE7 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88A29271D1C8B2400874AE7 /* Feed.storyboard */; };
+		A88A292A1D1CA29900874AE7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88A29291D1CA29900874AE7 /* MapKit.framework */; };
 		A8A999AB1D160C4B004250FB /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A999AA1D160C4B004250FB /* ListViewController.swift */; };
 		A8A999AD1D160DFF004250FB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A999AC1D160DFF004250FB /* MapViewController.swift */; };
 		A8A999AF1D160E15004250FB /* LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A999AE1D160E15004250FB /* LastViewController.swift */; };
@@ -66,6 +69,9 @@
 		A86F3B591D1890E300C7C2B8 /* MediaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
 		A86F3B5B1D19EA4500C7C2B8 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		A88A29211D1C660600874AE7 /* HomeView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
+		A88A29231D1C81D700874AE7 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		A88A29271D1C8B2400874AE7 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		A88A29291D1CA29900874AE7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A8A999AA1D160C4B004250FB /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = ../ListViewController.swift; sourceTree = "<group>"; };
 		A8A999AC1D160DFF004250FB /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A8A999AE1D160E15004250FB /* LastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LastViewController.swift; path = ../LastViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A88A292A1D1CA29900874AE7 /* MapKit.framework in Frameworks */,
 				DDAB5814932ADB72CA5D8E6A /* libPods-Instagram.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +115,8 @@
 				2F516B041D134B4C0078F8AA /* AppDelegate.swift */,
 				2F516B061D134B4C0078F8AA /* ViewController.swift */,
 				2F1823A91D19B2D200281F28 /* Start.storyboard */,
+				A88A29231D1C81D700874AE7 /* Search.storyboard */,
+				A88A29271D1C8B2400874AE7 /* Feed.storyboard */,
 				A88A29211D1C660600874AE7 /* HomeView.storyboard */,
 				2F2A73C51D1B225B00939535 /* TabViewController.swift */,
 				2F2A73C31D1ADB0A00939535 /* NewAccountViewController.swift */,
@@ -141,6 +150,7 @@
 		9CF3C4C4A532B3ED4FFD8502 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A88A29291D1CA29900874AE7 /* MapKit.framework */,
 				057C231D72393F210C381C96 /* libPods-Instagram.a */,
 			);
 			name = Frameworks;
@@ -227,10 +237,12 @@
 			files = (
 				A86F3B561D1852A200C7C2B8 /* Profile.storyboard in Resources */,
 				A88A29221D1C660600874AE7 /* HomeView.storyboard in Resources */,
+				A88A29281D1C8B2400874AE7 /* Feed.storyboard in Resources */,
 				2F516B121D134B4C0078F8AA /* LaunchScreen.storyboard in Resources */,
 				2F0B996A1D183C24002D555F /* GoogleService-Info.plist in Resources */,
 				2F516B0F1D134B4C0078F8AA /* Assets.xcassets in Resources */,
 				2FDA984B1D1873150014CFF8 /* Camera.storyboard in Resources */,
+				A88A29241D1C81D700874AE7 /* Search.storyboard in Resources */,
 				2F1823AA1D19B2D200281F28 /* Start.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

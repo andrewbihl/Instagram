@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Camera View Controller-->
+        <!--Camera-->
         <scene sceneID="f5D-GD-alo">
             <objects>
-                <viewController id="8qQ-AX-dDk" customClass="CameraViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Camera" id="8qQ-AX-dDk" customClass="CameraViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qdl-f8-QHs"/>
                         <viewControllerLayoutGuide type="bottom" id="QvX-gy-Rao"/>
