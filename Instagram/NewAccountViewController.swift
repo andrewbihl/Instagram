@@ -95,6 +95,7 @@ class NewAccountViewController: UIViewController {
                 }
                 print("Account values are valid")
                 self.createAccount()
+                self.performSegueWithIdentifier("logInSegue", sender: nil)
             })
         }
         

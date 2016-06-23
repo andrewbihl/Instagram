@@ -304,7 +304,6 @@
 				2FDA984F1D1883480014CFF8 /* CameraViewButton.swift in Sources */,
 				A8A999AB1D160C4B004250FB /* ListViewController.swift in Sources */,
 				A8A999AF1D160E15004250FB /* LastViewController.swift in Sources */,
-				A8A13DE31D15B6FE007A97A5 /* GridViewController.swift in Sources */,
 				2F2A73C41D1ADB0A00939535 /* NewAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
