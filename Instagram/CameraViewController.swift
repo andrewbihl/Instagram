@@ -16,6 +16,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var imageView: UIImageView!
     var username : String?
     var storedImageURL : NSURL?
+    let rootRef = FIRDatabase.database().reference()
     
     @IBAction func onVideoSelected(sender: UIBarButtonItem) {
         let picker = UIImagePickerController()
@@ -55,15 +56,19 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         popoverPresenter?.sourceRect = imageView.frame
     }
     
-    func addImageToUserLibrary(){
-        
+    func addImageToUserLibrary(imageRef: NSURL, description : String, keyString : String){
+        let userPostsRef = rootRef.child("users").child(username!).child("posts")
+        var postDict = Dictionary<String, AnyObject>()
+        postDict.updateValue(imageRef.absoluteString, forKey: "picture")
+        postDict.updateValue(description, forKey: "description")
+        userPostsRef.updateChildValues([keyString : postDict])
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         print("Image or Video selected")
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-        var randomString = String(arc4random_uniform(110000))
-        randomString = "\(randomString).jpg"
+        let randomStringNumber = String(arc4random_uniform(110000))
+        let randomString = "\(randomStringNumber).jpg"
         let imageRef = FIRStorage.storage().reference().child("images").child(username!).child(randomString)
         let imageData = UIImageJPEGRepresentation(image, 0.7)
         let metaData = FIRStorageMetadata()
@@ -75,6 +80,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             else{
                 print("The image should have been uploaded to FIRStorage")
                 self.storedImageURL = metadata!.downloadURLs![0]
+                let myDescription = "This is a picture I took."
+                self.addImageToUserLibrary(self.storedImageURL!, description: myDescription, keyString: randomStringNumber)
+                
             }
             self.dismissViewControllerAnimated(true, completion: nil)
 

@@ -12,8 +12,7 @@ class ProfileViewController: UIViewController, GridCollectionViewControllerDeleg
     
     @IBOutlet weak var containerView: UIView!
     
-    
-    
+    var username : String?
     var listVC: UIViewController?
     var mapVC: UIViewController?
     var lastVC: UIViewController?
@@ -23,7 +22,7 @@ class ProfileViewController: UIViewController, GridCollectionViewControllerDeleg
     var imageForDetailView: UIImage?
     
     override func viewDidLoad() {
-        //        reference to storyboard
+//        reference to storyboard
         let storyboard = UIStoryboard(name: "Profile", bundle: nil)
         listVC = storyboard.instantiateViewControllerWithIdentifier("imageListVC")
         mapVC = storyboard.instantiateViewControllerWithIdentifier("mapVC")
@@ -31,9 +30,11 @@ class ProfileViewController: UIViewController, GridCollectionViewControllerDeleg
         gridVC = storyboard.instantiateViewControllerWithIdentifier("gridVC") as? GridCollectionViewController
         gridVC!.delegate = self
         showGrid()
-        
+        let pvc = parentViewController as! TabViewController
+        username = pvc.username
     }
     
+    //    func occupyPostsArray = Array<Post>()
     
     //    func controller(controller: GridCollectionViewController, didSelectItem: AnyObject) {
     //        print("A picture was tapped")

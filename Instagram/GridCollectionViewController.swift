@@ -38,6 +38,7 @@ class GridCollectionViewController: UICollectionViewController{
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! MyCollectionViewCell
         
+        //let image = posts[indexPath.row].photo
         let image = UIImage(named: samplePhotos[indexPath.row])
         //let image = UIImage(named: usersPosts[indexPath.row]["image"])
         cell.imageView.image = image
