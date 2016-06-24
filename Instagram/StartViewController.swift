@@ -11,6 +11,7 @@ import Firebase
 
 class StartViewController: UIViewController {
     let rootRef = FIRDatabase.database().reference()
+    var username : String?
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -22,15 +23,15 @@ class StartViewController: UIViewController {
     }
 
     @IBAction func onLoginAttempt(sender: AnyObject) {
-        let userName = usernameField.text
+        username = usernameField.text
         let password = passwordField.text
         
         rootRef.child("users").observeSingleEventOfType(.Value) { (snapshot: FIRDataSnapshot) in
             var usersDict : Dictionary<String,AnyObject>?
             usersDict = snapshot.value as! Dictionary<String,AnyObject>
-            guard let passwordForAccount = usersDict?[userName!]?["password"] as? String else{self.failToSignIn();return}
-            if (usersDict?.keys.contains(userName!))! && passwordForAccount == password!{
-                    FIRAuth.auth()?.signInWithEmail(userName!, password: password!, completion: { (user:FIRUser?, error: NSError?) in
+            guard let passwordForAccount = usersDict?[self.username!]?["password"] as? String else{self.failToSignIn();return}
+            if (usersDict?.keys.contains(self.username!))! && passwordForAccount == password!{
+                    FIRAuth.auth()?.signInWithEmail(self.username!, password: password!, completion: { (user:FIRUser?, error: NSError?) in
                         print("sign-in successful")
                         self.signIn()
                         return
@@ -58,9 +59,10 @@ class StartViewController: UIViewController {
             let dvc = segue.destinationViewController as! NewAccountViewController
             dvc.rootRef = self.rootRef
         }
-//        else if segue.identifier == "logInSegue"{
-//            self.navigationController?.viewControllers = [segue.destinationViewController]
-//        }
+        else if segue.identifier == "logInSegue"{
+            let dvc = segue.destinationViewController as! TabViewController
+            dvc.username = self.username
+        }
     }
     
 }
