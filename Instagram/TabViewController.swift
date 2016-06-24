@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class TabViewController: UITabBarController {
+
+    var username : String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +23,6 @@ class TabViewController: UITabBarController {
     override func viewDidAppear(animated: Bool) {
         self.view.window?.rootViewController = self
     }
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

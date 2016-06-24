@@ -48,7 +48,7 @@ class GridCollectionViewController: UICollectionViewController{
     
      func collectionView (collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
-        return CGSizeMake(collectionView.frame.width/3, collectionView.frame.height/3)
+        return CGSizeMake(collectionView.frame.width/3.0, collectionView.frame.height/3.0)
         
     }
     

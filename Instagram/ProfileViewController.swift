@@ -26,7 +26,7 @@ class ProfileViewController: UIViewController, GridCollectionViewControllerDeleg
         listVC = storyboard.instantiateViewControllerWithIdentifier("imageListVC")
         mapVC = storyboard.instantiateViewControllerWithIdentifier("mapVC")
         lastVC = storyboard.instantiateViewControllerWithIdentifier("lastVC")
-        gridVC = storyboard.instantiateViewControllerWithIdentifier("gridVC") as! GridCollectionViewController
+        gridVC = storyboard.instantiateViewControllerWithIdentifier("gridVC") as? GridCollectionViewController
         gridVC!.delegate = self
         showGrid()
         
