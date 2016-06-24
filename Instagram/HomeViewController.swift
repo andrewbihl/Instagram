@@ -8,6 +8,37 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet var tableView: UITableView!
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.reloadData()
+    }
+    
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return 10
+    }
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("HomeFeedCellID", forIndexPath: indexPath)
+        
+        return cell
+    
+    
+    }
+    
+    
+    
+
+    
+    
+    
 
 }

@@ -12,6 +12,8 @@ class ProfileViewController: UIViewController, GridCollectionViewControllerDeleg
     
     @IBOutlet weak var containerView: UIView!
     
+    
+    
     var listVC: UIViewController?
     var mapVC: UIViewController?
     var lastVC: UIViewController?

@@ -37,6 +37,7 @@
 		A8A999AD1D160DFF004250FB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A999AC1D160DFF004250FB /* MapViewController.swift */; };
 		A8A999AF1D160E15004250FB /* LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A999AE1D160E15004250FB /* LastViewController.swift */; };
 		A8A999B11D172ADC004250FB /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A999B01D172ADC004250FB /* GridCollectionViewController.swift */; };
+		A8AF3A7B1D1CC8BB0036B008 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF3A7A1D1CC8BB0036B008 /* HomeTableViewCell.swift */; };
 		DDAB5814932ADB72CA5D8E6A /* libPods-Instagram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 057C231D72393F210C381C96 /* libPods-Instagram.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		A8A999AC1D160DFF004250FB /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A8A999AE1D160E15004250FB /* LastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LastViewController.swift; path = ../LastViewController.swift; sourceTree = "<group>"; };
 		A8A999B01D172ADC004250FB /* GridCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCollectionViewController.swift; sourceTree = "<group>"; };
+		A8AF3A7A1D1CC8BB0036B008 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,17 +119,18 @@
 				2F1823A91D19B2D200281F28 /* Start.storyboard */,
 				A88A29231D1C81D700874AE7 /* Search.storyboard */,
 				A88A29271D1C8B2400874AE7 /* Feed.storyboard */,
+				A86F3B541D1852A200C7C2B8 /* Profile.storyboard */,
 				A88A29211D1C660600874AE7 /* HomeView.storyboard */,
+				2F516B1B1D134D940078F8AA /* HomeViewController.swift */,
+				A8AF3A7A1D1CC8BB0036B008 /* HomeTableViewCell.swift */,
 				2F2A73C51D1B225B00939535 /* TabViewController.swift */,
 				2F2A73C31D1ADB0A00939535 /* NewAccountViewController.swift */,
 				2F1823AB1D19B36300281F28 /* StartViewController.swift */,
-				A86F3B541D1852A200C7C2B8 /* Profile.storyboard */,
 				2FDA984A1D1873150014CFF8 /* Camera.storyboard */,
 				2FDA984E1D1883480014CFF8 /* CameraViewButton.swift */,
 				A8A999A91D160C28004250FB /* ProfileView */,
 				2F516B1F1D134E560078F8AA /* FeedViewController.swift */,
 				2F516B1D1D134E0D0078F8AA /* SearchViewController.swift */,
-				2F516B1B1D134D940078F8AA /* HomeViewController.swift */,
 				2F516B191D134D560078F8AA /* CameraViewController.swift */,
 				2F516B0E1D134B4C0078F8AA /* Assets.xcassets */,
 				2F516B101D134B4C0078F8AA /* LaunchScreen.storyboard */,
@@ -326,6 +329,7 @@
 				2F516B1C1D134D940078F8AA /* HomeViewController.swift in Sources */,
 				2F516B071D134B4C0078F8AA /* ViewController.swift in Sources */,
 				2F2A73C61D1B225B00939535 /* TabViewController.swift in Sources */,
+				A8AF3A7B1D1CC8BB0036B008 /* HomeTableViewCell.swift in Sources */,
 				2F516B1A1D134D560078F8AA /* CameraViewController.swift in Sources */,
 				2F516B0D1D134B4C0078F8AA /* Instagram.xcdatamodeld in Sources */,
 				A86F3B581D188C2B00C7C2B8 /* MediaItemTableViewCell.swift in Sources */,
