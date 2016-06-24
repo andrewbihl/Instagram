@@ -63,6 +63,13 @@ class NewAccountViewController: UIViewController {
         rootRef?.child("users").child(usernameField.text!).setValue(newUser)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "logInSegue"{
+            let dvc = segue.destinationViewController as! TabViewController
+            dvc.username = self.self.usernameField.text
+        }
+    }
+    
     @IBAction func onCreateTapped(sender: AnyObject) {
         
         let validityCheck = entriesAreValid()
