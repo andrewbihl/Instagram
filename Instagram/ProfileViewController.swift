@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileViewController: UIViewController, GridCollectionViewControllerDelegate {
     
@@ -17,6 +18,7 @@ class ProfileViewController: UIViewController, GridCollectionViewControllerDeleg
     var mapVC: UIViewController?
     var lastVC: UIViewController?
     var gridVC: GridCollectionViewController?
+    var posts : Array<Post>?
     
     var commentForDetailView: String?
     var imageForDetailView: UIImage?
@@ -30,11 +32,36 @@ class ProfileViewController: UIViewController, GridCollectionViewControllerDeleg
         gridVC = storyboard.instantiateViewControllerWithIdentifier("gridVC") as? GridCollectionViewController
         gridVC!.delegate = self
         showGrid()
-        let pvc = parentViewController as! TabViewController
+        let pvc = parentViewController?.parentViewController as! TabViewController
         username = pvc.username
+        occupyPostsArray()
+        print("Posts array populated")
     }
     
-    //    func occupyPostsArray = Array<Post>()
+    func occupyPostsArray(){
+        let userPostsRef = FIRDatabase.database().reference().child("users").child(username!).child("posts")
+        userPostsRef.observeSingleEventOfType(.Value) { (snapshot : FIRDataSnapshot) in
+            let myPosts = snapshot.value as! Dictionary<String, Dictionary<String,AnyObject>>
+            for post in myPosts.values{
+                let currentPost = Post()
+                
+                currentPost.myDescription = post["description"] as? String
+                let imageURL = NSURL(string: post["picture"] as! String)
+                let session = NSURLSession.sharedSession()
+                let task = session.dataTaskWithURL(imageURL!, completionHandler: { (data : NSData?, nil, error: NSError?) in
+                    if error != nil{
+                        print(error?.localizedDescription)
+                    }
+                    else{
+                        let currentImage = UIImage(data: data!)
+                        currentPost.photo = currentImage
+                        self.posts?.append(currentPost)
+                    }
+                })
+                task.resume()
+            }
+        }
+    }
     
     //    func controller(controller: GridCollectionViewController, didSelectItem: AnyObject) {
     //        print("A picture was tapped")

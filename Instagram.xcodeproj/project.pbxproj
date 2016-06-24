@@ -22,6 +22,7 @@
 		2F516B1E1D134E0D0078F8AA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B1D1D134E0D0078F8AA /* SearchViewController.swift */; };
 		2F516B201D134E560078F8AA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B1F1D134E560078F8AA /* FeedViewController.swift */; };
 		2F516B221D134E810078F8AA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F516B211D134E810078F8AA /* ProfileViewController.swift */; };
+		2FB1533C1D1D9CDE00F6F8A8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB1533B1D1D9CDE00F6F8A8 /* Post.swift */; };
 		2FDA984B1D1873150014CFF8 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA984A1D1873150014CFF8 /* Camera.storyboard */; };
 		2FDA984F1D1883480014CFF8 /* CameraViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA984E1D1883480014CFF8 /* CameraViewButton.swift */; };
 		A86F3B291D173CFF00C7C2B8 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F3B281D173CFF00C7C2B8 /* MyCollectionViewCell.swift */; };
@@ -60,6 +61,7 @@
 		2F516B1D1D134E0D0078F8AA /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2F516B1F1D134E560078F8AA /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		2F516B211D134E810078F8AA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2FB1533B1D1D9CDE00F6F8A8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2FDA984A1D1873150014CFF8 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		2FDA984E1D1883480014CFF8 /* CameraViewButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewButton.swift; sourceTree = "<group>"; };
 		5CD09523AC7E7C692313B2E9 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		2F516B031D134B4C0078F8AA /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				2FB1533B1D1D9CDE00F6F8A8 /* Post.swift */,
 				2F516B041D134B4C0078F8AA /* AppDelegate.swift */,
 				2F516B061D134B4C0078F8AA /* ViewController.swift */,
 				2F1823A91D19B2D200281F28 /* Start.storyboard */,
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8A999AD1D160DFF004250FB /* MapViewController.swift in Sources */,
+				2FB1533C1D1D9CDE00F6F8A8 /* Post.swift in Sources */,
 				2F1823AC1D19B36300281F28 /* StartViewController.swift in Sources */,
 				2F516B1E1D134E0D0078F8AA /* SearchViewController.swift in Sources */,
 				A86F3B5A1D1890E300C7C2B8 /* MediaItem.swift in Sources */,
